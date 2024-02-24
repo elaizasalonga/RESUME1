@@ -1,0 +1,122 @@
+/* Define some variables for colors and fonts */
+:root {
+    --highlight-color: #45FFCA;
+    --font-family:serif; 
+  }
+
+  img {
+    width: 250px; /* change the width of the image */
+    height: 250px; /* change the height of the image */
+    float: left; /* make the image float to the left */
+    margin-right: 20px; /* add some space between the image and the text */
+    border: 5px solid var(--highlight-color); /* add a 5px solid border with the highlight color */
+  }
+  
+  /* Set the margin and padding of the body to zero */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set the width and margin of the container */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Set the font family, color, and background of the header */
+  header {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background: var(--primary-color);
+  }
+  
+  /* Set the font size, weight, and margin of the name */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Set the font size, weight, and margin of the section titles */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  /* Set the font size and margin of the paragraphs */
+  p {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  /* Set the font size and margin of the list items */
+  li {
+    display: list-item;
+    font-size: 19px;
+    margin: 10px;
+  }
+  
+  /* Set the display, list style, and padding of the unordered lists */
+  ul {
+    display: flex;
+    list-style-type: square;
+    flex-direction: column;
+    padding: 0;
+    font-size: 19px;
+    
+  }
+  
+  /* Set the color of the contact information */
+  .contact {
+    color: var(--secondary-color);
+    list-style-type: none;
+  }
+
+  ul.contact {
+    color: var(--secondary-color);
+    list-style-type: none;
+    text-align: center; /* Add this line to center the text */
+  }
+  
+  /* Set the color of the tasks */
+  .tasks {
+    color: var(--primary-color);
+  }
+  
+  /* Set the color of the achievements */
+  .achievements {
+    color: var(--primary-color);
+  }
+  
+  /* Set the color of the languages */
+  .languages {
+    color: var(--primary-color);
+  }
+  
+  /* Set the color of the skills */
+  .skills {
+    color: var(--primary-color);
+  }
+  
+  /* Set the position, margin, padding, border, and color of the button */
+  button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    color: var(--secondary-color);
+    background: var(--highlight-color);
+    cursor: pointer;
+    
+  }
+/* Add a hover effect that changes the button background image to a gradient and applies a filter */
+button:hover {
+  background-image: linear-gradient(to right, #45FFCA, #FEFFAC);
+  filter: brightness(1.2);
+  transition: 0.9s; /* Add a transition to make the animation smoother */
+}
